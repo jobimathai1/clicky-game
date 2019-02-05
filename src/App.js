@@ -5,6 +5,7 @@ import characters from './characters.json';
 import CharacterCard from './components/CharacterCard';
 import Nav from './components/Nav';
 import Title from './components/Title';
+import Container from './Container';
 
 function moveCharacters(arr) {
   for (let i = arr.length - 1; i > 0; i--) {
