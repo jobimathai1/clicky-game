@@ -27,22 +27,17 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Wrapper>
+        <Nav
+          title="Game of Thrones Clicky Game"
+          score={this.state.currentScore}
+          topScore={this.state.topScore}
+          rightWrong={this.state.rightWrong}
+        />
+
+        <Title>
+          Try to click on each character, but don't hit any duplicates, or the game of thrones is lost
+        </Title>
     );
   }
 }
